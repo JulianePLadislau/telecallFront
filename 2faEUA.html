@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>2FA</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/telecallicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Eterna
+  * Updated: May 30 2023 with Bootstrap v5.3.0
+  * Template URL: https://bootstrapmade.com/eterna-free-multipurpose-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body id="dark-mode" onload="javascript:recuperaLogin()">
+
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope d-flex align-items-center"><a href="suporte@telecall.com">suporte@telecall.com</a></i>
+        <i class="bi bi-phone d-flex align-items-center ms-4"><span>(21) 3030-1010</span></i>
+      </div>
+      <div class="social-links d-none d-md-flex align-items-center">
+        <a href="https://api.whatsapp.com/send?phone=552130301010&text=%23Comercial" target="_blank" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
+        <a href="https://www.facebook.com/TelecallBr" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/telecallbr/" target="_blank"  class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/telecall/" target="_blank"  class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-between align-items-center">
+
+      <div class="logo">
+        <a href="index.html"><img src="assets/img/telecall.png" alt="" class="img-fluid"></a>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li class="dropdown"><a href="indexEUA.html">Home<i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="index.html#cpaas">CPaaS</a></li>
+              <li><a href="index.html#uso">Uses</a></li>
+              <li><a href="index.html#advantages">Advantages</a></li>
+              <li><a href="index.html#clientes">Our Clients</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown"><a class="active" href="2faEUA.html">2FA<i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="2faEUA.html#2fa">2FA</a></li>
+              <li><a href="2faEUA.html#como-funciona">How does it work?</a></li>
+              <li><a href="2faEUA.html#beneficio">Benefits</a></li>
+              <li><a href="2faEUA.html#quem-usa">Who uses it?</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown"><a href="numeroEUA.html">Mask Number<i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="numeroEUA.html#numero">Mask Number</a></li>
+              <li><a href="numeroEUA.html#como-funciona">How does it work?</a></li>
+              <li><a href="numeroEUA.html#quem-usa">Who uses it?</a></li>
+              <li><a href="numeroEUA.html#features">Advanced Features</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown"><a href="googleEUA.html">Google Verified Calls<i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="googleEUA.html#problema">The Problem</a></li>
+              <li><a href="googleEUA.html#oque">What is it?</a></li>
+              <li><a href="googleEUA.html#compatibilidade">Compatibility</a></li>
+              <li><a href="googleEUA.html#como-funciona">How does it work?</a></li>
+              <li><a href="googleEUA.html#beneficios">Benefits</a></li>
+              <li><a href="googleEUA.html#usos">Uses</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="smsEUA.html">Programmable SMS<i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="smsEUA.html#oquee">What is it?</a></li>
+              <li><a href="smsEUA.html#usos">Who uses it?</a></li>
+              <li><a href="smsEUA.html#jornada">Customer Journey</a></li>
+              <li><a href="smsEUA.html#beneficios">Benefits</a></li>
+            </ul>  
+          </li>
+
+          <li class="dropdown"><a href="2faEUA.html"><img src="assets/img/icon-eua.png"><i class="bi bi-chevron-down"></i></a>
+            <ul class="idioma">
+              <li><a href="2fa.html"><img src="assets/img/brasil-icon.png"></a></li>
+            </ul>
+          </li>
+
+          <li><a href="frm_login.html" class="getstarted">Login</a></li>
+
+          <li class="dropdown">
+            <form action="" method="get">
+                <input type="hidden" name="tipo_constraste" id="tipo_constraste" value="baixo_constraste">     
+                <buttton type="button" class="bi bi-circle-half" value="" onclick="javascript:mudarConstraste()"></buttton>
+            </form>
+          </li>
+          <li class="dropdown"> 
+            <form action="" method="get">     
+                <input type="hidden" name="fonte_padrao" id="fonte_padrao" value="12">
+                <buttton type="button" class="bi bi-zoom-out" value="" onclick="javascript:diminuirZoom()"></buttton>
+                <buttton type="button" class="bi bi-zoom-in" value="" onclick="javascript:aumentarZoom()"></buttton>     
+            </form>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <ol>
+          <li><a href="indexEUA.html">Home</a></li>
+          <li>2FA</li>
+        </ol>
+        <h2>Two-Factor Authentication</h2>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row">
+            <div class="col-lg-6">
+              <img src="assets/img/2fa-icon.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0 content">
+              <div class="section-title">
+                <h2 id="2fa">2FA Two-Factor Authentication</h2>
+              </div>
+              <p class="fst-italic">
+                2FA is a security procedure that ensures that 2 unique factors are required for the authorization of an action. The first factor is the user's password, and the second factor can be authenticated via a token, fingerprint detection, facial recognition, code sent via SMS, among others.
+              </p>
+              <br>
+              <h3>2FA allows you to:</h3>
+              <ul>
+                <li><i class="bi bi-check-circle"></i> Send a password via SMS, voice, or email for user authentication.</li>
+                <li><i class="bi bi-check-circle"></i> Add an extra layer of security beyond the personal password.</li>
+                <li><i class="bi bi-check-circle"></i> Provide greater security for users.</li>
+              </ul>
+            </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts">
+      <div class="container">
+        <div class="section-title">
+            <h3>Strengthen the security strategy of your business.</h3>
+            <p>Adding a recovery phone number to an individual account can block up to:</p>
+            <br>
+            
+            <div class="row no-gutters">
+            
+              <div class="col-lg-4 col-md-6 d-md-flex align-items-md-stretch">
+                <div class="count-box">
+                  <i class="bi bi-shield-check"></i>
+                  <br>
+                  <br>
+                  <h5><strong>100%</strong> of automated bots,</h5>
+                </div>
+              </div>
+            
+              <div class="col-lg-4 col-md-6 d-md-flex align-items-md-stretch">
+                <div class="count-box">
+                  <i class="bi bi-shield-check"></i>
+                  <br>
+                  <br>
+                  <h5><strong>99%</strong> of mass phishing attacks,</h5>
+                </div>
+              </div>
+            
+              <div class="col-lg-4 col-md-6 d-md-flex align-items-md-stretch">
+                <div class="count-box">
+                  <i class="bi bi-shield-check"></i>
+                  <br>
+                  <br>
+                  <h5>and <strong>66%</strong> of targeted attacks.</h5>
+                </div>
+              </div>
+            
+            </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+
+    <div class="container">
+      <div class="section-title">
+        <h2 id="como-funciona">How it works?</h2>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+
+          <img src="assets/img/2fa-2.png" class="img-fluid" alt="">
+       </div>
+      </div>  
+    </div>
+
+        <div class="pricing"><br>
+            <ul>
+                <li><i class="bi bi-1-circle"></i> The user accesses your website or application and enters the registered password to log into their profile or complete a transaction.</li><br>
+                <li><i class="bi bi-2-circle"></i> Telecall receives the login attempt and requests the user to enter their phone number to authorize access.</li><br>
+                <li><i class="bi bi-3-circle"></i> After entering their number, Telecall sends the user a one-time-use PIN code via SMS, call, or email.</li><br>
+                <li><i class="bi bi-4-circle"></i> The user enters the code on the website or application to complete the verification process.</li><br>
+            </ul>
+        </div>
+
+      <div class="section-title">
+        <h2 id="beneficio">Benefits</h2>
+      </div>
+      <div class="pricing">
+        <ul>
+            <li><i class="bi bi-check-all"></i> Provide <span class="cor">enhanced security</span> for your customers.</li>
+            <li><i class="bi bi-check-all"></i> Reduce cases of <span class="cor">fraud and breaches</span> and prevent unauthorized access to data.</li>
+            <li><i class="bi bi-check-all"></i> Send OTP through <span class="cor">multiple channels</span>, including SMS, voice, or email.</li>
+            <li><i class="bi bi-check-all"></i><span class="cor">Channel flexibility</span> ensures that users can complete desired tasks even if they have an issue with one channel. For example, sending OTP via SMS, and in case of failure, sending OTP via voice call, and in case of another failure, sending it via email.</li>
+            <li><i class="bi bi-check-all"></i> Simple and <span class="cor">quick implementation</span> API.</li>
+            <li><i class="bi bi-check-all"></i><span class="cor">Intuitive platform</span> that allows you to view usage reports by day, month, or year and search using various filter criteria.</li>
+        </ul>
+      </div>
+      <br>
+      <br>
+
+
+      <section id="counts" class="counts">
+        <div class="container">
+          <div class="section-title">
+          <h2 id="quem-usa">Who use?</h2>
+          </div>
+  
+          <div class="row no-gutters">
+  
+            <div class="col-lg-4 col-md-6 d-md-flex align-items-md-stretch">
+              <div class="count-box">
+                <i class="bi bi-coin"></i>
+                <br>
+                <br>
+                <h5><strong>Finance</strong></h5>
+                <ul>
+                  <li>Access to portal/app</li>
+                  <li>Authentication for banking transactions</li>
+                  <li>Online payments (PicPay, PayPal)</li>
+                  <li>Digital wallets (Google Pay, Apple Pay, Samsung Pay)</li>
+                </ul>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 d-md-flex align-items-md-stretch">
+              <div class="count-box">
+                <i class="bi bi-heart-pulse"></i>
+                <br>
+                <br>
+                <h5><strong>Finance</strong></h5>
+                <ul>
+                  <li>Access to portal/app</li>
+                  <li>Authentication for banking transactions</li>
+                  <li>Online payments (PicPay, PayPal)</li>
+                  <li>Digital wallets (Google Pay, Apple Pay, Samsung Pay)</li>
+                </ul>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 d-md-flex align-items-md-stretch">
+              <div class="count-box">
+                <i class="bi bi-airplane"></i>
+                <br>
+                <br>
+                <h5><strong>Tourism</strong></h5>
+                <ul>
+                  <li>Access to portal/app</li>
+                  <li>Reservation management</li>
+                  <li>Access to history</li>
+                  <li>Save payment data</li>
+                  <li>Password recovery</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 d-md-flex align-items-md-stretch">
+              <div class="count-box">
+                <i class="bi bi-cart4"></i>
+                <br>
+                <br>
+                <h5><strong>Retail</strong></h5>
+                <ul>
+                  <li>Access to portal/app</li>
+                  <li>Save payment data</li>
+                  <li>Access to history</li>
+                  <li>Password recovery</li>
+                  <li>Electronic receipt</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 d-md-flex align-items-md-stretch">
+              <div class="count-box">
+                <i class="bi bi-bank"></i>
+                <br>
+                <br>
+                <h5><strong>Government</strong></h5>
+                <ul>
+                  <li>Access to portal/app</li>
+                  <li>Information management</li>
+                  <li>Scheduling</li>
+                  <li>Password recovery</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+  
+          </div>
+  
+        </div>
+      </section>
+
+  
+
+
+
+  </main><!-- End #main -->
+
+   <!-- ======= Footer ======= -->
+   <footer id="footer">
+
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <img src="assets/img/telecall-logo-white.png" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <h4>About Telecall</h4>
+            <p>Telecall is a Brazilian telecommunications operator that offers its customers the highest standards of quality, speed, and accessibility in communication solutions. Our services include a wide range of value-added features, providing customers with more productive, innovative, and efficient operations. With over 20 years of experience in the global industry, Telecall is synonymous with quality and efficiency.</p>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Address</h4>
+            <p>
+              Centro empresarial Mario Henrique Simonsen Av. das Américas, 3434<br>
+              Bloco 1, Sala 505 Barra da Tijuca <br>
+              Rio de Janeiro, RJ
+            </p>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contact</h4>
+            <p>
+              <strong>Phone:</strong> (21) 3030-1010<br>
+              <strong>Email:</strong> suporte@telecall.com<br>
+            </p>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 footer-info">
+            <h4>Social Media</h4>
+            <div class="social-links mt-3">
+              <a href="https://api.whatsapp.com/send?phone=552130301010&text=%23Comercial" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>
+              <a href="https://www.facebook.com/TelecallBr" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="https://www.instagram.com/telecallbr/" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="https://www.linkedin.com/company/telecall/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Telecall</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/eterna-free-multipurpose-bootstrap-template/ -->
+    
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
